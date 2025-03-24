@@ -1,0 +1,141 @@
+Self-Review Exercises 1.1
+
+Fill in the blanks:
+
+a) Computers process data under the control of sets of instructions called programs.
+b) The key logical units of the computer are the input unit, output unit, memory unit, arithmetic and logic unit (ALU), central processing unit (CPU), and secondary storage unit.
+c) The three types of languages are machine language, assembly language, and high-level language.
+d) The programs that translate high-level language programs into machine language are called compilers.
+e) Android is an operating system for mobile devices based on the Linux kernel and Java.
+f) Release software is generally feature complete, (supposedly) bug-free, and ready for use by the community.
+g) The Wii Remote, as well as many smartphones, use a(n) accelerometer, which allows the device to respond to motion.
+
+
+---
+
+Self-Review Exercises 1.2
+
+a) The java command from the JDK executes a Java application.
+b) The javac command from the JDK compiles a Java program.
+c) A Java source code file must end with the .java file extension.
+d) When a Java program is compiled, the file produced by the compiler ends with the .class file extension.
+e) The file produced by the Java compiler contains bytecodes that are executed by the Java Virtual Machine (JVM).
+
+
+---
+
+Self-Review Exercises 1.3
+
+a) Objects enable the design practice of encapsulation—although they may know how to communicate with one another across well-defined interfaces, they normally are not allowed to know how other objects are implemented.
+b) Java programmers concentrate on creating classes, which contain fields and the set of methods that manipulate those fields and provide services to clients.
+c) The process of analyzing and designing a system from an object-oriented point of view is called object-oriented analysis and design (OOAD).
+d) A new class of objects can be created conveniently by inheritance—the new class (called the subclass) starts with the characteristics of an existing class (called the superclass), possibly customizing them and adding unique characteristics of its own.
+e) Unified Modeling Language (UML) is a graphical language that allows people who design software systems to use an industry-standard notation to represent them.
+f) The size, shape, color, and weight of an object are considered attributes of the object’s class.
+
+
+---
+
+Self-Review Exercises 1.4
+
+a) The logical unit that receives information from outside the computer for use by the computer is the input unit.
+b) The process of instructing the computer to solve a problem is called programming.
+c) Assembly language is a type of computer language that uses English-like abbreviations for machine-language instructions.
+d) Output unit is a logical unit that sends information that has already been processed by the computer to various devices so that it may be used outside the computer.
+e) Primary storage (RAM) and secondary storage (hard disk, SSD) are logical units of the computer that retain information.
+f) Arithmetic and Logic Unit (ALU) is a logical unit of the computer that performs calculations.
+g) Central Processing Unit (CPU) is a logical unit of the computer that makes logical decisions.
+h) High-level languages are most convenient to the programmer for writing programs quickly and easily.
+i) The only language a computer can directly understand is that computer’s machine language.
+j) Control unit is a logical unit of the computer that coordinates the activities of all the other logical units.
+
+
+---
+
+Self-Review Exercises 1.5
+
+a) The Java programming language is now used to develop large-scale enterprise applications, to enhance the functionality of web servers, to provide applications for consumer devices, and for many other purposes.
+b) C initially became widely known as the development language of the UNIX operating system.
+c) The Transmission Control Protocol (TCP) ensures that messages, consisting of sequentially numbered pieces called bytes, were properly routed from sender to receiver, arrived intact, and were assembled in the correct order.
+d) The C++ programming language was developed by Bjarne Stroustrup in the early 1980s at Bell Laboratories.
+
+
+---
+
+Self-Review Exercises 1.6
+
+a) Java programs normally go through five phases— edit, compile, load, verify, and execute.
+b) A(n) Integrated Development Environment (IDE) provides many tools that support the software development process, such as editors for writing and editing programs, debuggers for locating logic errors in programs, and many other features.
+c) The command java invokes the Java Virtual Machine (JVM), which executes Java programs.
+d) A(n) virtual machine (VM) is a software application that simulates a computer but hides the underlying operating system and hardware from the programs that interact with it.
+e) The class loader takes the .class files containing the program’s bytecodes and transfers them to primary memory.
+f) The bytecode verifier examines bytecodes to ensure that they’re valid.
+
+
+---
+
+Self-Review Exercises 1.7
+
+The two compilation phases of Java programs:
+
+1. Compilation Phase:
+
+The Java source code (.java file) is compiled using the javac compiler.
+
+The compiler translates the Java code into bytecode stored in a .class file.
+
+
+
+2. Execution Phase:
+
+The JVM loads the .class file.
+
+The bytecode verifier checks the bytecode for security issues.
+
+The Java interpreter (JVM) executes the bytecode line by line or optimizes it using Just-In-Time (JIT) compilation.
+
+
+
+
+
+---
+
+Self-Review Exercises 1.8
+
+Applying object-oriented concepts to a wristwatch:
+
+Object: A wristwatch is an object.
+
+Attributes: Color, size, material, brand, battery life.
+
+Behaviors: Telling time, setting an alarm, displaying date.
+
+Class: A general category of watches (e.g., digital watches, analog watches).
+
+Inheritance: An alarm clock is a subclass of a watch with additional features.
+
+Modeling: Designing different types of watches before production.
+
+Messages: User interactions, such as setting the time.
+
+Encapsulation: The internal mechanism of the watch is hidden from the user.
+
+Interface: The display and buttons that allow interaction.
+
+Information Hiding: The battery mechanism is not visible to the user.
+
+
+---
+
+
+Self-Review Exercises 1.9 - 1.12
+
+These require research and practical exercises:
+
+1.9: Visit carbon footprint calculators and understand emission factors.
+
+1.10: Use BMI calculators and study BMI formulas.
+
+1.11: Research hybrid car attributes like fuel efficiency and battery type.
+
+1.12: Write a program to replace gender-specific words using a dictionary-based approach.
