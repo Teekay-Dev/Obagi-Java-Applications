@@ -1,0 +1,20 @@
+Self-Review 
+Exercises 
+2.1
+a) A'{' begins the body of every method, and a  '}'  ends the body of every method.
+b)  if statement 
+c) // begins an end-of-line comment.
+d) Spaces, tabs, and newlines are called white space.
+e) Keywords
+f)  Main.
+g) Methods System.out.print, System.out.println, and System.out.printf 
+
+
+2.2 True/False Statements
+a) False – Comments are ignored by the compiler and do not affect program execution.
+b) True
+c) False – Java is case-sensitive, so number and NuMbEr are different variables.
+d) False – The remainder operator % can be used with floating-point numbers as well as integers.
+e) False – * / % have higher precedence than + -.
+
+2.3(The answer is in NotePad ++)
