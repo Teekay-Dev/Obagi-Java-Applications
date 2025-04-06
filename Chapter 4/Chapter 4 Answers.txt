@@ -1,0 +1,197 @@
+Exercise 1: Finding Errors
+Here’s a breakdown of each segment:
+(a)
+i = 1;
+while (i <= 10);
+++i;
+}
+---Error: The semicolon () after the  causes the loop to execute as an empty statement,
+ making  execute only once after the loop completes.
+---Correction: You must remove the semicolon after the WHILE condition 
+and ensure proper loop structure.
+int i = 1;
+while (i <= 10) {
+    ++i;
+}
+
+(b)
+for (k = 0.1; k != 1.0; k += 0.1)
+System.out.println(k);
+---Error: Floating-point numbers should never be compared using
+!=  due to precision errors. The condition k!= 1.0 may never be met exactly.
+---Correction: Using <=  instead of  != is safer when dealing with floating-point values
+for (double k = 0.1; k <= 1.0; k += 0.1)
+    System.out.println(k);
+
+(c)
+switch (n) {
+case 1:
+    System.out.println("The number is 1");
+case 2:
+    System.out.println("The number is 2");
+    break;
+default:
+    System.out.println("The number is not 1 or 2");
+    break;
+}
+---Error: There’s a missing break; statement after case 1, causing a fall-through, where case 1 will print both "The number is 1"  and  "The number is 2" unintentionally.
+---Correction: Adding break;  after case 1 prevents unintended execution.
+switch (n) {
+case 1:
+    System.out.println("The number is 1");
+    break;
+case 2:
+    System.out.println("The number is 2");
+    break;
+default:
+    System.out.println("The number is not 1 or 2");
+    break;
+}
+
+(d)
+n = 1;
+while (n < 10)
+System.out.println(n++);
+---Error: This loop will print values only up to 9, whereas the expected output should be 1 to 10.
+---Correction:
+int n = 1;
+while (n <= 10) // Changed condition to <=
+    System.out.println(n++);
+
+Exercise 2: Repetition Concepts
+4.5: Four Basic Elements of Counter-Controlled Repetition
+Counter-controlled repetition requires:
+1. Initialization: Establish a variable to keep track of count(e.g int counter = 1).
+2. Condition: A loop-controlling expression that determines when to exit (while(counter <= 10)).
+3. Update: Modify the counter each iteration (counter++).
+4. Loop Body: The statements executed repeatedly inside the loop.
+
+4.6: Comparing While vs. For Loops
+----While Loop: Used when the number of repetitions is not known in advance.
+ Example:
+while (condition) {
+    // Execute repeatedly
+}
+
+----For Loop: Used when repetitions are known ahead of time.
+Example:
+ for (initialization; condition; update) {
+    // Execute repeatedly
+}
+
+4.7: When to Use a  do...while Instead of while
+A do...while loop is useful when the loop must execute at least once, regardless of the condition.
+ Example:
+do {
+    System.out.println("This runs at least once!");
+} while (false); // Executes once, then stops.
+This is useful for input validation, where a user must enter data at least once.
+
+4.8: Break vs. Continue
+Break: Exits the loop entirely
+Continue: Skips the remaining loop body and proceeds to the next iteration.
+Example:
+for (int i = 1; i <= 10; i++) {
+    if (i == 5) continue; // Skips printing 5
+    System.out.println(i);
+}
+Here, continue  prevents 5 from printing, but the loop continues execution.
+
+4.9: Fixing Errors
+(a)
+For (i = 100, i >= 1, i++) System.out.println(i);
+Error: For  should be "for" , and commas "," should be semicolons ";".
+Correction:
+for (int i = 100; i >= 1; i--) System.out.println(i);
+
+(b)
+switch (value % 2) {
+case 0:
+    System.out.println("Even integer");
+case 1:
+    System.out.println("Odd integer");
+}
+Error: Missing break;  statements.
+Correction:
+switch (value % 2) {
+case 0:
+    System.out.println("Even integer");
+    break;
+case 1:
+    System.out.println("Odd integer");
+    break;
+}
+
+(c)
+for (i = 19; i >= 1; i += 2)
+System.out.println(i);
+
+Error: i += 2 should be i-= 2 , since it's counting down.
+Correction:
+for (int i = 19; i >= 1; i -= 2)
+    System.out.println(i);
+
+(d)
+counter = 2;
+do {
+    System.out.println(counter);
+    counter += 2;
+} While (counter < 100);
+
+Error: While should be while  (lowercase).
+Correction:
+int counter = 2;
+do {
+    System.out.println(counter);
+    counter += 2;
+} while (counter <= 100);
+
+Exercise 4.10: Printing.java
+This program prints 10 rows of @@@@@, with each row containing 5 @ symbols.
+Output:
+@@@@@
+@@@@@
+@@@@@
+@@@@@
+@@@@@
+@@@@@
+@@@@@
+@@@@@
+@@@@@
+@@@@@
+
+Exericise 4.32
+To calculate Facebook’s user growth 
+using the compound-growth formula, 
+we use:
+[P = P_0 \times (1 + r)^t]
+Where:
+- \( P \) is the final population,
+- \( P_0 \) is the initial population (1 billion users),
+- \( r \) is the growth rate (4% = 0.04 per month),
+- \( t \) is the number of months.
+
+We solve for \( t \) using:
+
+[t = \frac{\log(P / P_0)}{\log(1 + r)}]
+--Step 1: Calculate for 1.5 billion users
+[t = \frac{\log(1.5 / 1)}{\log(1.04)}]
+[t = \frac{\log(1.5)}{\log(1.04)}]
+[t = \frac{0.1761}{0.0170} \approx 10.36 \text{ months}]
+
+So, it takes about 11 months to reach 1.5 billion users.
+---
+
+---Step 2: Calculate for 2 billion users
+[t = \frac{\log(2 / 1)}{\log(1.04)}]
+[t = \frac{\log(2)}{\log(1.04)}]
+[t = \frac{0.3010}{0.0170} \approx 17.71 \text{ months}]
+
+So, **it takes about 18 months** to reach 2 billion users.
+---
+
+---Final Answer:
+-1.5 billion users → ~11 months
+-2 billion users→ ~18 months
+
+This assumes consistent growth at 4% per month without disruptions.
